@@ -1,0 +1,90 @@
+/* Réinitialisation des marges et du padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corps de la page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #242323;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Conteneur du formulaire de connexion */
+.login-container {
+    background-color: #0051bb;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;  /* Limite la largeur à 400px */
+    text-align: center;
+}
+
+/* Titre du formulaire */
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #000000;
+}
+
+/* Groupes de champs de saisie */
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+/* Labels des champs */
+label {
+    font-size: 14px;
+    color: #555;
+    display: block;
+}
+
+/* Champs de saisie */
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px;  /* Un peu plus de padding pour les champs */
+    font-size: 16px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s ease;  /* Transition pour un effet au focus */
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: #4CAF50;  /* Change la couleur de la bordure au focus */
+    outline: none;  /* Enlève la bordure bleue par défaut */
+}
+
+/* Bouton de connexion */
+button {
+    width: 100%;
+    padding: 12px;  /* Ajuste la taille du bouton pour qu'il soit plus large */
+    background-color: #fffb00;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;  /* Transition pour l'effet hover */
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Message d'erreur */
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 15px;
+}
